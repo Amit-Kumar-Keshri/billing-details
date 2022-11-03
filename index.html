@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="details">
+            <h2>Step 1: Your details</h2>
+            <div class="info" id="name">
+                <p>Name</p>
+                <input class="inpt" type="Name" placeholder="First and last name">
+            </div>
+            <div id="email" class="info">
+                <p>Email</p>
+                <input class="inpt" type="email" placeholder="example@domain.com">
+            </div>
+            <div class="info">
+                <p>Phone</p>
+                <input class="inpt" type="tel" name="phone" id="" placeholder="Eg. +91-9000012345">
+            </div>
+        </div>
+        <div class="details">
+            <h2>Step 2: Delivery address</h2>
+            <div class="info" id="name">
+                <p>Address</p>
+                <textarea  class="inpt" name="address" id="address" cols="25" rows="7"></textarea>
+            </div>
+            <div id="postalcode" class="info">
+                <p>Pin Code</p>
+                <input class="inpt" type="pincode">
+            </div>
+            <div class="info">
+                <p>Country</p>
+                <input class="inpt" type="text" name="country" id="" placeholder="India">
+            </div>
+        </div>
+        <div class="details">
+            <h2>Step 3: Card Details</h2>
+
+            <div class="card_type">
+                    <p>Card type</p>
+                    <div style="display: flex; justify-content:space-evenly">
+                        <div class="card">
+                            <input type="radio" id="visa" name="card" value="VISA">
+                            <img src="img/visa.png" width="35px" height="35px" alt="">
+                            <label for="card">VISA</label>
+                        </div>
+                        <div class="card">
+                            <input type="radio" id="amex" name="card" value="AmEx">
+                            <img src="img/amex.png" width="30px" height="35px" alt="">
+                            <label for="card">AmEx</label>
+                        </div>
+                        <div class="card">
+                            <input type="radio" id="mastercard" name="card" value="MasterCard">
+                            <img src="img/msc.png" width="30px" height="35px" alt="">
+                            <label for="card">MasterCard</label>
+                        </div>
+                    </div>
+                    
+                </div>
+            <div class="info">
+                <p>Card number</p>
+                <input class="inpt" id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19"
+                    placeholder="xxxx xxxx xxxx xxxx">
+            </div>
+            <div class="info">
+                <p>Security code</p>
+                <input class="inpt" id="cvv" type="tel" inputmode="numeric" autocomplete="ccv" maxlength="3"
+                    placeholder="CVV">
+            </div>
+            <div class="info">
+                <p>Name on card</p>
+                <input class="inpt" type="name" name="name" id="name">
+            </div>
+            <button type="submit">BUY IT!</button>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
