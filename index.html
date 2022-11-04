@@ -13,15 +13,15 @@
             <h2>Step 1: Your details</h2>
             <div class="info" id="name">
                 <p>Name</p>
-                <input class="inpt" type="Name" placeholder="First and last name">
+                <input class="inpt" type="Name" placeholder="First and last name" required>
             </div>
             <div id="email" class="info">
                 <p>Email</p>
-                <input class="inpt" type="email" placeholder="example@domain.com">
+                <input class="inpt" type="email" placeholder="example@domain.com" required>
             </div>
             <div class="info">
                 <p>Phone</p>
-                <input class="inpt" type="tel" name="phone" id="" placeholder="Eg. +91-9000012345">
+                <input class="inpt" type="tel" name="phone" id="" placeholder="Eg. +91-9000012345" required>
             </div>
         </div>
         <div class="details">
@@ -32,11 +32,11 @@
             </div>
             <div id="postalcode" class="info">
                 <p>Pin Code</p>
-                <input class="inpt" type="pincode">
+                <input class="inpt" type="pincode" required>
             </div>
             <div class="info">
                 <p>Country</p>
-                <input class="inpt" type="text" name="country" id="" placeholder="India">
+                <input class="inpt" type="text" name="country" id="" placeholder="India" required>
             </div>
         </div>
         <div class="details">
@@ -66,18 +66,18 @@
             <div class="info">
                 <p>Card number</p>
                 <input class="inpt" id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19"
-                    placeholder="xxxx xxxx xxxx xxxx">
+                    placeholder="xxxx xxxx xxxx xxxx" required>
             </div>
             <div class="info">
                 <p>Security code</p>
                 <input class="inpt" id="cvv" type="tel" inputmode="numeric" autocomplete="ccv" maxlength="3"
-                    placeholder="CVV">
+                    placeholder="CVV" required>
             </div>
             <div class="info">
                 <p>Name on card</p>
-                <input class="inpt" type="name" name="name" id="name">
+                <input class="inpt" type="name" name="name" id="name" required>
             </div>
-            <button type="submit">BUY IT!</button>
+            <button  type="submit" value="submit">BUY IT!</button>
         </div>
         
     </div>
